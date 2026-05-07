@@ -1,89 +1,262 @@
-# LabPlanner
+# LabPlanner – Planejamento Experimental em Nuvem
 
-LabPlanner is a cloud-native web application for Design of Experiments (DOE), developed using FastAPI, Flet, Docker and Google Cloud Run.
+LabPlanner é uma aplicação web desenvolvida para auxiliar no planejamento e análise de experimentos utilizando técnicas de Design of Experiments (DOE).  
 
-## Features
-
-- Factorial design generation (2^k)
-- Experimental matrix generation
-- Statistical regression analysis
-- ANOVA table
-- Pareto charts
-- Response surface plots
-- Cloud-native architecture
-- Microservices deployment
-- Automated testing (TDD)
+O sistema foi desenvolvido como parte de um Trabalho de Conclusão de Curso (TCC) em Engenharia de Software, utilizando arquitetura baseada em microsserviços, containers Docker e implantação em nuvem com Google Cloud Run.
 
 ---
 
-## Architecture
+# Aplicação Online
 
-- Frontend: Flet
-- Backend: FastAPI
-- DOE Service: Dedicated microservice
-- Containers: Docker
-- Deployment: Google Cloud Run
+A aplicação está disponível publicamente em:
+
+🔗 https://labplanner-frontend-378042908056.southamerica-east1.run.app
 
 ---
 
-## Live Application
+# Funcionalidades
 
-Frontend:
-https://labplanner-frontend-378042908056.southamerica-east1.run.app
-
-GitHub Repository:
-https://github.com/DaniellaVale/labplanner
+- Planejamento fatorial 2ᵏ
+- Planejamento fatorial 3ᵏ
+- Planejamento fatorial fracionado
+- Planejamento composto central (CCD)
+- Planejamento Box-Behnken
+- Definição de fatores e níveis experimentais
+- Geração automática da matriz experimental
+- Inserção de respostas experimentais
+- Regressão linear dos efeitos
+- Geração automática da tabela ANOVA
+- Gráfico de Pareto dos efeitos
+- Superfície de resposta
+- Mapa de contorno
+- Arquitetura distribuída em containers
+- Execução local com Docker Compose
+- Implantação em nuvem utilizando Google Cloud Run
 
 ---
 
-# System Screenshots
+# Arquitetura do Sistema
 
-## Main interface
+O sistema é dividido em três serviços principais:
+
+```text
+Frontend (Flet)
+        ↓
+Backend Core (FastAPI)
+        ↓
+DOE Service (FastAPI)
+```
+
+## Frontend
+Responsável pela interface gráfica do usuário.
+
+Funções:
+- Entrada de parâmetros experimentais
+- Exibição das tabelas
+- Visualização de gráficos
+- Comunicação com o backend via HTTP
+
+Tecnologias:
+- Python
+- Flet
+
+---
+
+## Backend Core
+Responsável pela lógica principal do sistema.
+
+Funções:
+- Gerenciamento dos experimentos
+- Armazenamento de dados
+- Regressão linear
+- ANOVA
+- Geração de gráficos
+
+Tecnologias:
+- FastAPI
+- NumPy
+- Pandas
+- Statsmodels
+- Matplotlib
+
+---
+
+## DOE Service
+Microsserviço especializado na geração dos planejamentos experimentais.
+
+Funções:
+- Geração das matrizes DOE
+- Conversão entre níveis codificados e reais
+- Criação dos diferentes tipos de planejamento
+
+Tecnologias:
+- FastAPI
+- Python
+
+---
+
+# Containers Docker
+
+O projeto utiliza containers Docker independentes:
+
+| Container | Responsabilidade |
+|---|---|
+| frontend_app | Interface do usuário |
+| backend_core | Processamento principal |
+| doe_service | Geração dos planejamentos |
+
+Todos os serviços são orquestrados utilizando Docker Compose.
+
+---
+
+# Screenshots do Sistema
+
+## Página inicial
 
 ![Main Interface](docs/images/home_screen.png)
 
 ---
 
-## Experimental matrix
+## Geração do planejamento experimental
 
-![Experimental Matrix](docs/images/experiment_table.png)
+![Experiment Generation](docs/images/experiment_generation.png)
 
 ---
 
-## Regression analysis and ANOVA
+## Análise de regressão e ANOVA
 
 ![Regression Analysis](docs/images/regression_analysis.png)
 
 ---
 
-## Pareto chart
+## Gráfico de Pareto
 
 ![Pareto Chart](docs/images/pareto_chart.png)
 
 ---
 
-## Response surface and contour plot
+## Superfície de resposta
 
 ![Response Surface](docs/images/response_surface.png)
 
 ---
 
-## Technologies Used
+## Interface dos gráficos
+
+![Icons Screen](docs/images/icons_screen.png)
+
+---
+
+# Tecnologias Utilizadas
 
 - Python
 - FastAPI
 - Flet
 - Docker
+- Docker Compose
 - Google Cloud Run
-- Pytest
-- Matplotlib
 - NumPy
 - Pandas
-- Scikit-learn
+- Matplotlib
 - Statsmodels
+- Pytest
+- k6
 
 ---
 
-## Author
+# Execução Local
 
-Daniella Vale
+## 1. Clonar o repositório
+
+```bash
+git clone https://github.com/DaniellaVale/labplanner.git
+```
+
+---
+
+## 2. Entrar na pasta do projeto
+
+```bash
+cd labplanner
+```
+
+---
+
+## 3. Executar os containers
+
+```bash
+docker-compose up --build
+```
+
+---
+
+# Endpoints Principais
+
+| Endpoint | Função |
+|---|---|
+| `/experiments` | Criação de experimentos |
+| `/analysis` | Regressão e ANOVA |
+| `/pareto.png` | Gráfico de Pareto |
+| `/surface.png` | Superfície de resposta |
+
+---
+
+# Testes de Desempenho
+
+O sistema foi submetido a testes de carga utilizando k6.
+
+Métricas avaliadas:
+- Latência média
+- Percentil 95 (P95)
+- Throughput
+- Taxa de erro
+
+Resultados observados:
+- ~161 requisições por segundo
+- Taxa de erro de 0%
+- Capacidade de processamento concorrente sob carga
+
+---
+
+# Estrutura do Projeto
+
+```text
+labplanner/
+│
+├── backend_core/
+├── doe_service/
+├── frontend_app/
+├── tests/
+├── docs/
+│   └── images/
+├── docker-compose.yml
+├── load_test.js
+├── README.md
+└── LICENSE
+```
+
+---
+
+# Licença
+
+Este projeto está licenciado sob a licença MIT.
+
+Consulte o arquivo:
+
+```text
+LICENSE
+```
+
+---
+
+# Autora
+
+Daniella Vale  
+Instituto de Química – UFRJ  
+Engenharia de Software – MBA USP
+
+---
+
+# Observações
+
+Este projeto possui finalidade acadêmica e científica, sendo utilizado como plataforma de apoio ao planejamento experimental e ensino de Design of Experiments (DOE).
