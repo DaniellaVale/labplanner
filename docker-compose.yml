@@ -1,0 +1,29 @@
+services:
+
+  doe_service:
+    build: ./doe_service
+    container_name: labplanner_doe
+    ports:
+      - "8550:8550"
+
+  backend:
+    build: ./backend_core
+    container_name: labplanner-backend
+    environment:
+      - DOE_SERVICE_URL=http://doe_service:8080
+    ports:
+      - "8000:8000"
+    depends_on:
+      - doe_service
+    volumes:
+      - ./backend_core:/app
+      - ./tests:/app/tests
+      - ./data:/data   # ✅ NOVO (ESSENCIAL)
+
+  frontend:
+    build: ./frontend_app
+    container_name: labplanner-frontend
+    ports:
+      - "8600:8600"
+    depends_on:
+      - backend

@@ -1,0 +1,7 @@
+pytest
+pytest-cov
+httpx
+fastapi
+numpy
+scipy
+scikit-learn

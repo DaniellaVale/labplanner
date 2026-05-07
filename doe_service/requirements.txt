@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+numpy<2.0.0
+pyDOE2
+pydantic
+scipy
+scikit-learn
+pandas
+matplotlib

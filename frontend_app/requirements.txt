@@ -1,0 +1,6 @@
+flet==0.82.2
+httpx
+matplotlib
+numpy
+scipy
+requests

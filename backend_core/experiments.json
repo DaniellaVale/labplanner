@@ -1,0 +1,814 @@
+{
+  "c997c621-05bb-4f49-8646-5544e609d26f": {
+    "id": "c997c621-05bb-4f49-8646-5544e609d26f",
+    "name": "teste erro",
+    "description": null,
+    "created_at": "2026-03-17T19:49:33.302351",
+    "design_type": "fatorial_2k",
+    "rows": 1,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 0,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": []
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^0",
+      "matrix": [
+        []
+      ],
+      "matrix_real": null,
+      "rows": 1,
+      "factors": 0,
+      "factor_names": null
+    },
+    "responses": null
+  },
+  "ac508008-4b2f-4f32-91b4-7cbbd3d49f47": {
+    "id": "ac508008-4b2f-4f32-91b4-7cbbd3d49f47",
+    "name": "Experimento teste",
+    "description": null,
+    "created_at": "2026-03-17T19:49:33.561427",
+    "design_type": "fatorial_2k",
+    "rows": 4,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": [
+        {
+          "name": "Temperatura",
+          "minimum": 20.0,
+          "maximum": 40.0
+        },
+        {
+          "name": "Tempo",
+          "minimum": 10.0,
+          "maximum": 30.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          30.0
+        ],
+        [
+          40.0,
+          10.0
+        ],
+        [
+          40.0,
+          30.0
+        ]
+      ],
+      "rows": 4,
+      "factors": 2,
+      "factor_names": [
+        "Temperatura",
+        "Tempo"
+      ]
+    },
+    "responses": null
+  },
+  "2ecabcc1-b8eb-4674-b2f1-200b890f3087": {
+    "id": "2ecabcc1-b8eb-4674-b2f1-200b890f3087",
+    "name": "Fluxo completo",
+    "description": null,
+    "created_at": "2026-03-17T19:49:33.789055",
+    "design_type": "fatorial_2k",
+    "rows": 8,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 2,
+      "levels": [
+        {
+          "name": "X1",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        {
+          "name": "X2",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0
+        ],
+        [
+          10.0,
+          20.0
+        ]
+      ],
+      "rows": 8,
+      "factors": 2,
+      "factor_names": [
+        "X1",
+        "X2"
+      ]
+    },
+    "responses": [
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0
+    ]
+  },
+  "578aaa4c-e533-46e6-bb8e-e0ba187b1ab8": {
+    "id": "578aaa4c-e533-46e6-bb8e-e0ba187b1ab8",
+    "name": "teste erro",
+    "description": null,
+    "created_at": "2026-03-17T19:58:17.816632",
+    "design_type": "fatorial_2k",
+    "rows": 1,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 0,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": []
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^0",
+      "matrix": [
+        []
+      ],
+      "matrix_real": null,
+      "rows": 1,
+      "factors": 0,
+      "factor_names": null
+    },
+    "responses": null
+  },
+  "5fda3f6c-6f31-437d-b917-9550172babd6": {
+    "id": "5fda3f6c-6f31-437d-b917-9550172babd6",
+    "name": "Experimento teste",
+    "description": null,
+    "created_at": "2026-03-17T19:58:18.185239",
+    "design_type": "fatorial_2k",
+    "rows": 4,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": [
+        {
+          "name": "Temperatura",
+          "minimum": 20.0,
+          "maximum": 40.0
+        },
+        {
+          "name": "Tempo",
+          "minimum": 10.0,
+          "maximum": 30.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          30.0
+        ],
+        [
+          40.0,
+          10.0
+        ],
+        [
+          40.0,
+          30.0
+        ]
+      ],
+      "rows": 4,
+      "factors": 2,
+      "factor_names": [
+        "Temperatura",
+        "Tempo"
+      ]
+    },
+    "responses": null
+  },
+  "43644a87-4e31-4625-986d-15f4b885fd8b": {
+    "id": "43644a87-4e31-4625-986d-15f4b885fd8b",
+    "name": "Fluxo completo",
+    "description": null,
+    "created_at": "2026-03-17T19:58:18.578470",
+    "design_type": "fatorial_2k",
+    "rows": 8,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 2,
+      "levels": [
+        {
+          "name": "X1",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        {
+          "name": "X2",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0
+        ],
+        [
+          10.0,
+          20.0
+        ]
+      ],
+      "rows": 8,
+      "factors": 2,
+      "factor_names": [
+        "X1",
+        "X2"
+      ]
+    },
+    "responses": [
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0
+    ]
+  },
+  "fe9e5964-f448-4b95-8d0b-32a9d609f107": {
+    "id": "fe9e5964-f448-4b95-8d0b-32a9d609f107",
+    "name": "Experimento teste",
+    "description": null,
+    "created_at": "2026-03-17T20:01:59.041699",
+    "design_type": "fatorial_2k",
+    "rows": 4,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": [
+        {
+          "name": "Temperatura",
+          "minimum": 20.0,
+          "maximum": 40.0
+        },
+        {
+          "name": "Tempo",
+          "minimum": 10.0,
+          "maximum": 30.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          30.0
+        ],
+        [
+          40.0,
+          10.0
+        ],
+        [
+          40.0,
+          30.0
+        ]
+      ],
+      "rows": 4,
+      "factors": 2,
+      "factor_names": [
+        "Temperatura",
+        "Tempo"
+      ]
+    },
+    "responses": null
+  },
+  "71af4662-1301-424a-9b06-f3dcb787bff4": {
+    "id": "71af4662-1301-424a-9b06-f3dcb787bff4",
+    "name": "Fluxo completo",
+    "description": null,
+    "created_at": "2026-03-17T20:01:59.530995",
+    "design_type": "fatorial_2k",
+    "rows": 8,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 2,
+      "levels": [
+        {
+          "name": "X1",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        {
+          "name": "X2",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0
+        ],
+        [
+          10.0,
+          20.0
+        ]
+      ],
+      "rows": 8,
+      "factors": 2,
+      "factor_names": [
+        "X1",
+        "X2"
+      ]
+    },
+    "responses": [
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0
+    ]
+  },
+  "8a4c52df-4463-4071-94dc-9569348b636c": {
+    "id": "8a4c52df-4463-4071-94dc-9569348b636c",
+    "name": "Experimento teste",
+    "description": null,
+    "created_at": "2026-03-17T20:05:18.813174",
+    "design_type": "fatorial_2k",
+    "rows": 4,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 1,
+      "levels": [
+        {
+          "name": "Temperatura",
+          "minimum": 20.0,
+          "maximum": 40.0
+        },
+        {
+          "name": "Tempo",
+          "minimum": 10.0,
+          "maximum": 30.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          20.0,
+          10.0
+        ],
+        [
+          20.0,
+          30.0
+        ],
+        [
+          40.0,
+          10.0
+        ],
+        [
+          40.0,
+          30.0
+        ]
+      ],
+      "rows": 4,
+      "factors": 2,
+      "factor_names": [
+        "Temperatura",
+        "Tempo"
+      ]
+    },
+    "responses": null
+  },
+  "aef675ad-5ee8-4fd5-a0fa-925e757d5767": {
+    "id": "aef675ad-5ee8-4fd5-a0fa-925e757d5767",
+    "name": "Fluxo completo",
+    "description": null,
+    "created_at": "2026-03-17T20:05:19.268063",
+    "design_type": "fatorial_2k",
+    "rows": 8,
+    "doe_request": {
+      "design_type": "fatorial_2k",
+      "factors": 2,
+      "center_points": 0,
+      "fractionality": null,
+      "replicates": 2,
+      "levels": [
+        {
+          "name": "X1",
+          "minimum": 0.0,
+          "maximum": 10.0
+        },
+        {
+          "name": "X2",
+          "minimum": 0.0,
+          "maximum": 20.0
+        }
+      ]
+    },
+    "doe_result": {
+      "design_type": "fatorial_2k",
+      "design_notation": "2^2",
+      "matrix": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "matrix_real": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          20.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0
+        ],
+        [
+          10.0,
+          20.0
+        ]
+      ],
+      "rows": 8,
+      "factors": 2,
+      "factor_names": [
+        "X1",
+        "X2"
+      ]
+    },
+    "responses": [
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0
+    ]
+  }
+}

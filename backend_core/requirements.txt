@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+httpx
+numpy
+scipy
+requests
+pydantic
+matplotlib
+numpy
+scipy
+scikit-learn
+pandas
+matplotlib
