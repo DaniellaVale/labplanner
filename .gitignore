@@ -40,5 +40,8 @@ Thumbs.db
 
 # Credenciais
 credentials.json
+
+results_k6.csv
+uninstaller.exe
 service-account.json
 *.pem
